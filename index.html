@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSAdocs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- navigation bar -->
+    <div class="nav-bar container" >
+        <div class="logo-name">
+            <button id="nav-button">
+                <p>DSA Docs</p>
+            </button>
+        </div>
+     
+        <div class="left-nav">
+            <div class="about-us">
+                <button id="nav-button">
+                    <a href="./pages/about_us.html" style="text-decoration: none;"><p>about us</p>
+                    </a>
+                </button>
+            </div>
+            <div class="github">
+                <button id="nav-button">
+                    <a href="https://github.com/AdityaWaradkar/DSAdocs" target="_blank"><i  href="https://github.com/AdityaWaradkar/DSAdocs" class="fa-brands fa-github"></i></a>
+                </button>
+            </div>
+            <div class="dark-light">
+                <button id="nav-button">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </button>
+            </div>
+        </div> 
+    </div>
+
+    <div class="main-body">
+        <div class="first-part">
+             <div class="arrays">
+                <button onclick="loadContent('./pages/arrays.html')">
+                    <p>Arrays and ArrayList</p>
+                </button>
+           
+             </div>
+             <div class="searching">
+                <button>
+                    <p>Searching</p>
+                </button>
+
+             </div>
+             <div class="sorting">
+                <button>
+                    <p>sorting</p>
+                </button>
+             </div>
+             <div class="time-space-complexity">
+                <button>
+                    <p>Time and Space Complexity</p>
+                </button>
+             </div>
+             <div class="mathematics">
+                <button>
+                    <p>Mathematics</p>
+                </button>
+             </div>
+             <div class="recursion">
+                <button>
+                    <p>Recursion</p>
+                </button>
+             </div>
+             <div class="backtracking">
+                <button>
+                    <p>Backtracking</p>
+                </button>
+             </div>
+             <div class="oop">
+                <button>
+                    <p>Object Oriented Programming</p>
+                </button></a>
+             </div>
+             <div class="linkedList">
+                <button>
+                    <p>Linked List</p>
+                </button>
+             </div>
+             <div class="stack-queue">
+                <button>
+                    <p>Stack and Queue</p>
+                </button>
+             </div>
+             <div class="trees">
+                <button>
+                    <p>Trees</p>
+                </button></a>
+             </div>
+             <div class="hashmap">
+                <button>
+                    <p>Hashmap</p>
+                </button>
+             </div>
+             <div class="dp">
+                <button>
+                    <p>Dynamic Programming</p>
+                </button>
+             </div>
+             <div class="heaps">
+                <button>
+                    <p>Heaps</p>
+                </button>
+             </div>
+             <div class="graph">
+                <button>
+                    <p>Graphs</p>
+                </button>
+             </div>
+        </div>
+        <div class="second-part content" id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat aut rem illo est incidunt qui quaerat voluptates provident, praesentium id. Id provident, distinctio quidem iure tenetur impedit officia possimus rem, fugit, sint eum quo ea? Veniam delectus explicabo et doloribus deleniti accusantium repellat laborum similique dolores blanditiis voluptate, enim consectetur illum possimus dolore rerum ullam labore ut eveniet consequuntur!</p>
+        </div>
+    
+    </div>
+
+    
+    <script>
+        function loadContent(page) {
+            fetch(page)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+    </script>
+</body>
+</html>
