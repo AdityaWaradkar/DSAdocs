@@ -9,6 +9,10 @@ body {
     padding: 0; /* Remove default padding */
 }
 
+a{
+    text-decoration: non;
+}
+
 .nav-bar
 {
     display: flex;
@@ -66,13 +70,16 @@ body {
 
 .about-us
 {
+    text-decoration: none;
     letter-spacing: 1.5px;
     font-weight: 300;
     font-size: x-large;
     font-family: "Inter", sans-serif;
     color: white;
 }
-.about-us > button > p{
+.about-us > button > a{
+    align-self: center;
+    text-decoration: none;
     font-size: large;
     font-weight: 300;
     color: white;
@@ -80,7 +87,7 @@ body {
 }
 
 #nav-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .main-body
@@ -117,6 +124,8 @@ body {
     align-items: left;
     overflow: scroll;
     color: white;
+    margin: 20px;
+    border-radius: 15px;
 }
 
 .first-part > div > button 
@@ -133,6 +142,8 @@ body {
 .second-part
 {
     overflow: scroll;
+    margin: 18px 18px 10px 0px;
+    border-radius: 15px;
 }
 
 .first-part > div
@@ -150,5 +161,5 @@ body {
 
 .first-part > div  >button:hover
 {
-    transform: scale(1.08);
+    transform: scale(1.09);
 }
